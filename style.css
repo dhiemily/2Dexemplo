@@ -28,4 +28,36 @@
         padding: 8px 12px;
     }
 
-    .menu a:hover{}
+    .menu a:hover{
+        background-color: black;
+        border-radius: 4px;
+        color: aliceblue;
+    }
+
+    /*Responsivo para telas menores*/
+    @media(max-width: 568px){
+        .cabecalho{
+            flex-direction:column;
+            align-items: flex-start;
+        }
+        .cabecalho_logo{
+            display: none;
+        }
+        .menu ul{
+            flex-direction: column;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li{
+            width: 100%;
+        }
+
+        .menu a{
+            display: block;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    }
